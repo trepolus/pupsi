@@ -1,0 +1,14 @@
+.btn {
+  background-color: $turquoise;
+  color: $white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+
+  &:hover {
+    background-color: darken($turquoise, 10%);
+    transform: scale(1.05);
+  }
+}
