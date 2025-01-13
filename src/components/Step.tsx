@@ -9,7 +9,7 @@ interface StepProps {
 const Step: React.FC<StepProps> = ({ img, title, description }) => {
     return (
         <div className="step">
-            <img src={`/public/${img}`} alt={title} />
+            <img src={`/${img}`} alt={title} />
             <h2>{title}</h2>
             <p>{description}</p>
         </div>
