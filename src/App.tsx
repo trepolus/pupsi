@@ -19,6 +19,11 @@ const App: React.FC = () => {
             description: "Drop 3 droplets into the toilet bowl before use.",
         },
         {
+            img: "JavierStep.png",
+            title: "Step 2.1: Let Javier Take Over! 🚽✨",
+            description: "After adding Pupsi droplets, sit back, relax, and let Pupsi work its magic. Even Javier can’t help but smile!",
+        },
+        {
             img: "step3.png",
             title: "Step 3: Flush 🚽✨",
             description: "Say goodbye to odours and hello to freshness!",
