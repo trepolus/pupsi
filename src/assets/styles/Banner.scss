@@ -1,0 +1,52 @@
+.banner-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff77a9, #68d8d6);
+  position: sticky; /* Make the banner stick to the top */
+  top: 0;
+  z-index: 1000;
+
+  .pupsi-logo {
+    width: 80px; /* Reduced size for a tighter layout */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .title-section {
+    text-align: left;
+
+    h1 {
+      font-size: 1.8rem;
+      color: #fff;
+      margin: 0;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #fff;
+      margin: 5px 0;
+    }
+
+    .banner-title {
+      font-size: 1.2rem;
+      color: #fff;
+      margin: 10px 0;
+    }
+
+    .banner-description {
+      font-size: 0.9rem;
+      color: #e0e0e0;
+      margin: 0;
+      max-width: 600px;
+    }
+  }
+}

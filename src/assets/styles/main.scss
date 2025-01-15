@@ -1,6 +1,5 @@
 @import './_variables.scss';
 @import './_mixins.scss';
-@import './_layout.scss';
 @import './_buttons.scss';
 
 body {
@@ -8,6 +7,18 @@ body {
   background: linear-gradient(135deg, $pink, $turquoise);
   color: $dark-gray;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Pushes footer to the bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Adds spacing around the main content */
 }
 
 .steps {
@@ -35,9 +46,12 @@ body {
   }
 }
 
-.buy-button-container {
-  margin-bottom: 2rem; /* Ensures space above the footer */
-}
 footer {
-  position: relative; /* Prevents overlapping content */
+  background-color: $dark-gray;
+  color: $white;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }

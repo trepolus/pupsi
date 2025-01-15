@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './components/Header';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Step from './components/Step';
 import Button from './components/Button';
 import './assets/styles/main.scss';
+import Banner from "./components/Banner.tsx";
 
 const App: React.FC = () => {
     const steps = [
@@ -32,7 +32,7 @@ const App: React.FC = () => {
 
     return (
         <div>
-            <Header />
+            <Banner />
             <Hero />
             <div className="steps">
                 {steps.map((step, index) => (
